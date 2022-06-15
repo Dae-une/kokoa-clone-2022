@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "variable.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon.css";
+@import "components/alt-screen-header.css";
+
+/* Screen */
+@import "screen/login.css";
+@import "screen/friends.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/chatting.css";
+
+body {
+  overflow-x: auto;
+  font-size: 14px;
+  color: #2e363e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main_screen {
+  margin: 0px var(--horizontal-space);
+}

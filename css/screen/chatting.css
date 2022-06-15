@@ -1,0 +1,142 @@
+#chatting-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+.alt-header_column span:last-child {
+  margin-left: 20px;
+}
+#chatting-screen .status-bar {
+  z-index: 2;
+}
+#chatting-screen .alt-header {
+  z-index: 1;
+}
+
+#chatting-screen .status-bar,
+#chatting-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+}
+
+.main-chatting {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatting-timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+}
+.message-info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-author {
+  opacity: 0.7;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.message_text {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  font-size: 16px;
+}
+
+.message_time {
+  opacity: 0.7;
+  margin-left: 5px;
+}
+.message-row_own {
+  justify-content: flex-end;
+}
+
+.message-row_own .message_text {
+  background-color: var(--yellow);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.message-row_own .message-info {
+  flex-direction: row-reverse;
+}
+.reply .reply_column:first-child {
+  width: 7%;
+}
+
+.reply .reply_column:last-child {
+  width: 93%;
+}
+.reply {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--border-line);
+  border-radius: 20px;
+}
+
+.reply_column:last-child > i,
+.reply_column button {
+  position: absolute;
+  right: 6px;
+  top: 9px;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply_column:last-child > i {
+  right: 50px;
+  top: 12px;
+  font-size: 26px;
+}
+.reply_column button i {
+  opacity: 1;
+}
+.reply_column button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.reply_column button:focus,
+.reply_column button:active {
+  outline: none;
+}

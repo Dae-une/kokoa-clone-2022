@@ -1,0 +1,61 @@
+/* 채팅방용 뱃지 */
+.badge {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+/* 네비 뱃지 애니메이션 */
+@keyframes nav_new_animation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-6px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+/* 네비 뱃지 */
+.badge-2 {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  color: white;
+  animation: nav_new_animation 1.5s ease-in-out infinite;
+}
+
+@keyframes appear-nav-btn {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.nav_btn {
+  animation: appear-nav-btn 0.5s ease-in forwards;
+  transform: translateY(60px);
+  opacity: 0;
+}
+
+.nav_btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav_btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.nav_btn:last-child {
+  animation-delay: 0.9s;
+}
